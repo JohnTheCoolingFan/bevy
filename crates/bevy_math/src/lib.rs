@@ -22,17 +22,17 @@ mod direction;
 mod float_ord;
 mod isometry;
 mod ops;
+pub mod polynomial_splines;
 pub mod primitives;
 mod ray;
 mod rects;
 mod rotation2d;
 #[cfg(feature = "rand")]
 pub mod sampling;
-pub use compass::{CompassOctant, CompassQuadrant};
-
 pub use affine3::*;
 pub use aspect_ratio::AspectRatio;
 pub use common_traits::*;
+pub use compass::{CompassOctant, CompassQuadrant};
 pub use direction::*;
 pub use float_ord::*;
 pub use isometry::{Isometry2d, Isometry3d};
